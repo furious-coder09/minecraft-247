@@ -1,7 +1,6 @@
 {
   "name": "minecraft-random-bot",
   "version": "1.0.0",
-  "description": "A random-behavior Minecraft bot with keep-alive web server for Render",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
