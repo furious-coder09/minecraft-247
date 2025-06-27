@@ -1,19 +1,16 @@
 {
-  "name": "ping-server",
+  "name": "minecraft-random-bot",
   "version": "1.0.0",
-  "type": "module",        
-  "main": "server.js",
+  "description": "A random-behavior Minecraft bot with keep-alive web server for Render",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.19.2"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.0"
-  },
-  "engines": {              
-    "node": ">=18"
+    "express": "*",
+    "mineflayer": "*",
+    "mineflayer-pathfinder": "*",
+    "vec3": "*",
+    "minecraft-data": "*"
   }
 }
