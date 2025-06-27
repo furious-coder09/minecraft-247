@@ -1,16 +1,19 @@
 {
-  "name": "minecraft-random-bot",
+  "name": "ping-server",
   "version": "1.0.0",
-  "main": "index.js",
+  "type": "module",          // keeps ES-module syntax working
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "dependencies": {
-    "express": "*",
-    "mineflayer": "*",
-    "mineflayer-pathfinder": "*",
-    "vec3": "*",
-    "minecraft-data": "*"
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "engines": {               // optional but recommended
+    "node": ">=18"
   }
 }
-
